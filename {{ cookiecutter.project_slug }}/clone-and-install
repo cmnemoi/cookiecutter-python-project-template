@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+git clone https://github.com/cmnemoi/{{ cookiecutter.project_slug }}.git && cd {{ cookiecutter.project_slug }}
+make

@@ -1,0 +1,34 @@
+[project]
+name = "{{ cookiecutter.project_slug }}"
+version = "0.1.0"
+description = "{{ cookiecutter.project_description }}"
+readme = "README.md"
+requires-python = "{{ cookiecutter.python_version }}"
+license = "{{ cookiecutter.project_license }}"
+authors = [
+    {name = "Charles-Meldhine Madi Mnemoi", email = "charlesmeldhine.madimnemoi@gmail.com"}
+]
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest-watcher>=0.4.3",
+]
+lint = [
+    "mypy>=1.13.0",
+    "ruff>=0.7.2",
+]
+test = [
+    "pytest>=8.3.3",
+    "pytest-cov>=6.0.0",
+]
+
+[tool.ruff]
+line-length = 119
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["{{ cookiecutter.project_slug }}"]

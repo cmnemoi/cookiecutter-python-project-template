@@ -1,0 +1,11 @@
+{   
+    "project_slug": "my_project",
+    "project_name": "My project",
+    "project_description": "My project description",
+    "project_license": "MIT",
+    "python_version": ">=3.12,<3.13",
+    "python_version_short": "3.12",
+    "_copy_without_render": [
+        ".github/workflows/ci.yaml"
+    ]
+}

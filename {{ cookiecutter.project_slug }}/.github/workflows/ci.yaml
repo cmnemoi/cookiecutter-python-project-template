@@ -36,11 +36,11 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked --no-group dev --group lint
       - name: Check code format with Ruff
-        run: uv run ruff format . --diff
+        run: make check-format
       - name: Lint code with Ruff
-        run: uv run ruff check .
+        run: make check-lint
       - name: Check types with Mypy
-        run: uv run mypy .
+        run: make check-types
   
   test:
     name: Tests
@@ -62,7 +62,7 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked --no-group dev --group test
       - name: Run tests with pytest
-        run: uv run pytest -v --cov=src
+        run: make test
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@e28ff129e5465c2c0dcc6f003fc735cb6ae0c673
         with:

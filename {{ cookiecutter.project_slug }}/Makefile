@@ -25,6 +25,6 @@ setup-git-hooks:
 	git config core.hooksPath hooks
 
 test:
-	uv run pytest -v --cov=src
+	uv run pytest -v --cov={{ cookiecutter.project_slug }}
 
 .PHONY: all check check-format check-lint install lint test

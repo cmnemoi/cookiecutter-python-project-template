@@ -1,4 +1,4 @@
-from {{ cookiecutter.project_name.lower().replace(' ', '_') }}.main import hello_world
+from {{ cookiecutter.project_slug }}.main import hello_world
 
 
 def test_hello_world():

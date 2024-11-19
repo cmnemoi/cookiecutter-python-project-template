@@ -1,7 +1,7 @@
 # {{ cookiecutter.project_name }}
 
-[![Continous Integration](https://github.com/cmnemoi/{{ cookiecutter.project_slug }}/actions/workflows/ci.yaml/badge.svg)](https://github.com/cmnemoi/{{ cookiecutter.project_slug }}/actions/workflows/ci.yaml)
-[![Continous Delivery](https://github.com/cmnemoi/{{ cookiecutter.project_slug }}/actions/workflows/create_github_release.yaml/badge.svg)](https://github.com/cmnemoi/{{ cookiecutter.project_slug }}/actions/workflows/create_github_release.yaml)
+[![Continuous Integration](https://github.com/cmnemoi/{{ cookiecutter.project_slug }}/actions/workflows/continous_integration.yaml/badge.svg)](https://github.com/cmnemoi/{{ cookiecutter.project_slug }}/actions/workflows/continous_integration.yaml)
+[![Continuous Delivery](https://github.com/cmnemoi/{{ cookiecutter.project_slug }}/actions/workflows/create_github_release.yaml/badge.svg)](https://github.com/cmnemoi/{{ cookiecutter.project_slug }}/actions/workflows/create_github_release.yaml)
 [![codecov](https://codecov.io/gh/cmnemoi/{{ cookiecutter.project_slug }}/graph/badge.svg?token=FLAARH38AG)](https://codecov.io/gh/cmnemoi/{{ cookiecutter.project_slug }})
 
 {{ cookiecutter.project_description }}

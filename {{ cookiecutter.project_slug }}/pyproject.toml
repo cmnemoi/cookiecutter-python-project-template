@@ -1,6 +1,6 @@
 [project]
 name = "{{ cookiecutter.project_slug.replace('_', '-') }}"
-version = "0.1.0"
+version = "0.0.0"
 description = "{{ cookiecutter.project_description }}"
 readme = "README.md"
 requires-python = "{{ cookiecutter.python_version }}"
@@ -27,6 +27,9 @@ test = [
 
 [tool.ruff]
 line-length = 119
+
+[tool.semantic_release]
+version_toml = ["pyproject.toml:project.version"]
 
 [build-system]
 requires = ["hatchling"]

@@ -19,6 +19,9 @@ lint:
 	uv run ruff format .
 	uv run ruff check . --fix
 
+semantic-release:
+	uv run semantic-release version --no-changelog --no-push --no-vcs-release --skip-build
+
 setup-git-hooks:
 	chmod +x hooks/pre-commit
 	chmod +x hooks/pre-push
@@ -27,4 +30,4 @@ setup-git-hooks:
 test:
 	uv run pytest -v --cov={{ cookiecutter.project_slug }} --cov-report=xml
 
-.PHONY: all check check-format check-lint check-types install lint setup-git-hooks test
+.PHONY: all check check-format check-lint check-types install lint semantic-release setup-git-hooks test

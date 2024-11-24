@@ -8,7 +8,24 @@ license = "{{ cookiecutter.project_license }}"
 authors = [
     {name = "Charles-Meldhine Madi Mnemoi", email = "charlesmeldhine.madimnemoi@gmail.com"}
 ]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
 dependencies = []
+
+[project.urls]
+"Bug Tracker" = "https://github.com/cmnemoi/{{ cookiecutter.project_slug }}/issues"
+Changelog = "https://github.com/cmnemoi/{{ cookiecutter.project_slug }}/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/cmnemoi/{{ cookiecutter.project_slug }}/"
+Repository = "https://github.com/cmnemoi/{{ cookiecutter.project_slug }}/"
 
 [dependency-groups]
 dev = [

@@ -3,8 +3,8 @@
     "project_name": "Python Project Template",
     "project_description": "Template repository for my Python projects.",
     "project_license": "MIT",
-    "python_version": ">=3.12,<3.13",
-    "python_version_short": "3.12",
+    "python_version": ">=3.13,<3.14",
+    "python_version_short": "3.13",
     "_copy_without_render": [
         ".github/workflows/continuous_integration.yaml",
         ".github/workflows/create_github_release.yaml"

@@ -1,10 +1,10 @@
-name: Continous Delivery
+name: Continuous Delivery
 
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["Continuous Integration"]
+    types:
+      - completed
 
 permissions:
   contents: read

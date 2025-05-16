@@ -11,7 +11,7 @@ Code Quality:
 - Use explicit constants, never magic numbers
 - Avoid double negatives
 - Use long, readable variable names
-- Write the simplest code possible : code should be do obvious it cannot have bugs
+- Write the simplest code possible : code should be so obvious it cannot have bugs
 - Eliminate duplication (DRY)
 
 Length Limits:

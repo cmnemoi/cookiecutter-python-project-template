@@ -10,7 +10,7 @@ alwaysApply: false
 ## Test Organization
 - Organize tests by domain/feature within `unit`, `integration`, and `e2e` directories
 - Use descriptive names for test files and methods, incorporating "should" statements
-- Follow the Given-When-Then pattern in tests
+- Follow the Given-When-Then pattern in tests into functions
 
 ## Unit Tests (`tests/unit`)
 - Place tests in directories reflecting the domain structure
@@ -43,7 +43,7 @@ alwaysApply: false
 
 ## Critical Rules
 - NEVER test implementation details; focus on behaviors
-- ALWAYS follow the Given-When-Then pattern in unit tests
+- ALWAYS follow the Given-When-Then pattern in tests, by putting different parts into separate functions
 - ALWAYS use descriptive method names for setup, action, and assertion steps
 - ALWAYS test both success and failure scenarios
 - ALWAYS use in-memory repositories over mocks when possible

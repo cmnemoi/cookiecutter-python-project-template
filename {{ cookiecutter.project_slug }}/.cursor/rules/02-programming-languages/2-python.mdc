@@ -1,12 +1,13 @@
 ---
 description: 
-globs: 
+globs: **/*.py
 alwaysApply: false
 ---
 Type Annotations:
-- Type everything explicitly using type hints
+- Type every function arguments with type hints
 - Avoid using Any
-- Use Optional for nullable types
+- Use `Type | None` for nullable types
+- Use `dict` and `list` for type hints, instead of `typing.List` or `typing.Dict`
 
 Error Handling:
 - Use specific exceptions for error handling

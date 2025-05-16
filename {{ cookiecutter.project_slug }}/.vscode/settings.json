@@ -1,4 +1,18 @@
-{
+{   
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "always"
+    },
+    "[python]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "python.analysis.autoImportCompletions": true,
+    "python.languageServer": "Pylance",
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
     "restoreTerminals.terminals": [
         {
             "splitTerminals": [
@@ -23,14 +37,5 @@
                 },
             ]
         }
-    ],
-    "python.testing.pytestArgs": [
-        "tests"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true,
-    "[python]": {
-      "editor.formatOnSave": true,
-      "editor.defaultFormatter": "charliermarsh.ruff"
-    }
+    ]
 }

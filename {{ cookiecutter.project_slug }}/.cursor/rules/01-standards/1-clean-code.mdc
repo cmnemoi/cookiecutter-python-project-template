@@ -1,37 +1,38 @@
 ---
-description: 
-globs: **/*.py
-alwaysApply: false
+trigger: always_on
+description: APPLY Clean Code principles WHENEVER writing code
+origin: .windsurf/rules/01-standards/1-clean-code.md
 ---
 
 Code Quality:
-- Write no comments
-- Use strict types only
-- Disallow untyped values
-- Use explicit constants, never magic numbers
-- Avoid double negatives
-- Use long, readable variable names
-- Write the simplest code possible : code should be so obvious it cannot have bugs
-- Eliminate duplication (DRY)
+- Maintain strict typing.
+- Disallow untyped values and magic numbers.
+- Use explicit enums for possible values.
+- Avoid double negatives and ensure conditions are self-documenting.
+- Use long, readable variable names reflecting domain concepts.
+- Write the simplest code possible
+- Eliminate duplication (DRY).
 
 Length Limits:
-- Max 30 lines per function, extract until you drop
-- Max 5 params per function
-- Max 300 lines per file
-- Max 10 sub-files per folder
+- Max 20 lines per function : extract until you drop.
+- Max 3 parameters per function.
+- Max 300 lines per file.
+- Max 10 sub-files per folder.
 
 Responsibilities:
-- One responsibility per file
+- One responsibility per file.
+- Organize code by domain concepts (e.g., Communications, Player, Action).
 
 Functions:
-- No flag parameters
-- Non public functions / methods should be put at the end of the file
-- Non public functions / methods should be prefixed by an underscore
-- Avoid nested functions
+- No flag parameters; split into multiple functions if needed.
+- Follow command-query separation.
+- Use verbs for service methods that perform actions.
 
 Errors:
-- Fail fast
-- Throw errors early
-- Use custom domain errors
-- Translate errors to user language
-- Log errors in EN with error codes
+- Fail fast and throw errors early.
+- Use custom domain errors and translate errors to user language.
+- Log errors in English with error codes.
+
+Code Organization:
+- Follow Ports & Adapters pattern with clear separation between entities, repositories, services, enums, events, listeners, and value objects.
+- Favor composition over inheritance.

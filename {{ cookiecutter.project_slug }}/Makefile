@@ -32,7 +32,7 @@ setup-git-hooks:
 	git config core.hooksPath hooks
 
 test:
-	uv run pytest -v --cov=python_project_template --cov-report=xml
+	uv run pytest -v --cov={{ cookiecutter.project_slug }} --cov-report=xml
 
 upgrade-dependencies:
 	uv lock --upgrade

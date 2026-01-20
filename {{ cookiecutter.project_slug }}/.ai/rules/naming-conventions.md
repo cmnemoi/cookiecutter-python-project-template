@@ -1,9 +1,3 @@
----
-description: 
-globs: **/*.py
-alwaysApply: false
----
-
 General Principles:
 - Use descriptive names
 - Reveal intent in all names

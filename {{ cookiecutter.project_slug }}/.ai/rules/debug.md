@@ -1,9 +1,3 @@
----
-description: 
-globs: 
-alwaysApply: false
----
-
 How to find a bug:
 - Summarize issue with your own words
 - List action paths between files in mermaid

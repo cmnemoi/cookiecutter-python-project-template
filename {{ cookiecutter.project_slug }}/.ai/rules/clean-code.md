@@ -1,16 +1,10 @@
----
-trigger: always_on
-description: APPLY Clean Code principles WHENEVER writing code
-origin: .windsurf/rules/01-standards/1-clean-code.md
----
-
 Code Quality:
 - Maintain strict typing.
 - Disallow untyped values and magic numbers.
 - Use explicit enums for possible values.
 - Avoid double negatives and ensure conditions are self-documenting.
 - Use long, readable variable names reflecting domain concepts.
-- Write the simplest code possible
+- Write the simplest code possible.
 - Eliminate duplication (DRY).
 
 Length Limits:
@@ -21,7 +15,7 @@ Length Limits:
 
 Responsibilities:
 - One responsibility per file.
-- Organize code by domain concepts (e.g., Communications, Player, Action).
+- Organize code by domain concepts.
 
 Functions:
 - No flag parameters; split into multiple functions if needed.
@@ -34,5 +28,8 @@ Errors:
 - Log errors in English with error codes.
 
 Code Organization:
-- Follow Ports & Adapters pattern with clear separation between entities, repositories, services, enums, events, listeners, and value objects.
+- Follow Ports & Adapters pattern.
 - Favor composition over inheritance.
+
+Documentation:
+- Use Numpy-style docstrings for all public modules, types, constants, and functions (not for private ones).

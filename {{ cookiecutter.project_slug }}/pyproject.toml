@@ -25,16 +25,16 @@ Repository = "https://github.com/cmnemoi/{{ cookiecutter.project_slug }}/"
 
 [dependency-groups]
 dev = [
-    "pytest-watcher>=0.4.3",
-    "python-semantic-release>=10.5.2",
+    "pytest-watcher>=0.6.3",
+    "python-semantic-release>=10.5.3",
 ]
 lint = [
-    "mypy>=1.19.0",
+    "mypy>=1.19.1",
     "pytest-mypy>=1.0.1",
-    "ruff>=0.14.7",
+    "ruff>=0.14.13",
 ]
 test = [
-    "pytest>=9.0.1",
+    "pytest>=9.0.2",
     "pytest-cov>=7.0.0",
 ]
 
